@@ -8,25 +8,26 @@
 </head>
 <body>
     <form action="" method="post">
-    เวลางาน : <input type="number" name="pay" min="1" minlength="10" maxlength="10" placeholder="Number only">
+    ค่านํ้า : <input type="number" name="pay" min="1" minlength="10" maxlength="10" placeholder="Number only">
     <br><br>
     <button type="submit"> ค่าน้ำ </button>
     </form>
     <?php
+    error_reporting(0);//ปิด error
     $a = $_POST["pay"] ;
-    if (($a>=1) and ($a<=50)) { 
+    if (($a>=1) && ($a<=50)) { 
         $b = $a * 4.25 ;
         echo "<br>" ;
-        echo "$b" ;
+        echo "ค่านํ้า = $b" ;
     }
-    else if (($a>=51) and ($a<=100)) { 
+    else if (($a>=51) && ($a<=100)) { 
         $b = $a * 3.25 ;
         echo "<br>" ;
-        echo "$b" ;
+        echo "ค่านํ้า =$b" ;
     }
-    else if ($a>101)  { 
+    else { 
         $b = $a * 2.25 ;
         echo "<br>" ;
-        echo "$b" ;
+        echo "ค่านํ้า =$b" ;
     }
     ?>
