@@ -23,3 +23,19 @@
     }
 
 ?>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <litle></litle>
+    </head>
+    </body>
+    <center>
+        <?php
+
+date_default_timezone_set("Asia");
+        echo date('H');
+        ?>
+    </center>
+    </body>
+</html>
